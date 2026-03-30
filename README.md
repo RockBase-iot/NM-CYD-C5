@@ -19,11 +19,19 @@ The NM-CYD-C5 has the following features:
  - IEEE 802.15.4: Zigbee 3.0 end-device support
  - Thread: IPv6-based mesh networking protocol
 
+| COMPONENT | SPECIFICATION |
+|:---:|:---:|
+|**Main SoC**| ESP32-C5 (RISC-V 32-bit, 240MHz)|
+|**Wireless Protocols**| Wi-Fi 6(802.11az) 2.4/5GHz + BLE 5.3 + IEEE 802.15.4|
+|**Display**| 2.8" TFT, 240*320, ST7789, Touch Screen|
+|**Memory**| 16MB Flash + 8MB PSRAM|
+|**Interface**| 2xUSB-C, GPIO, Micro Slot|
+
 # Where to buy?
 You can get the NM-CYD-C5 from RockBase Aliexpress and our website, or from NMTech Stores.
 
  - [RockBase IoT Store](https://www.aliexpress.com/store/1105401362)
- - [RockBase Shop](https://www.rockbase.shop/)
+ - [RockBase Shop](https://rockbase.shop/products/nm-cyd-c5)
  - [NMTech Global Store](https://www.aliexpress.com/store/1104265822)
  - [NMMiner](https://www.nmminer.com)
 
@@ -42,7 +50,7 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
 
 ## Pinout of NM-CYD-C5
 
-Using ST7789 with XPT2046 fo touchscreen, shared the SPI.
+### Using ST7789 with XPT2046 fo touchscreen, shared the SPI.
 
 | Device  | SCK   | MISO  | MOSI  | CS    | IRQ   |
 | ---     | :---: | :---: | :---: | :---: | :---: |
@@ -50,17 +58,43 @@ Using ST7789 with XPT2046 fo touchscreen, shared the SPI.
 | Touch   | 6     | 2     | 7     | 1     | ---   |
 | SD Card | 6     | 2     | 7     | 10    | ---   |
 
-LP-UART(`NM-CYD-C5:P5`) for GPS module , like: `NM-ATGM336H`, plug and play.
+### LP-UART(`NM-CYD-C5:P5`) for GPS module , like: `NM-ATGM336H`, plug and play:
 | Device  | RX    | TX    | GPIO  |
 | ---     | :---: | :---: | :---: |
 | GPS     | 4     | 5     | ---   |
 
-`NM-CYD-C5: CN1`:  3.3V | IO9 | IO8 | GND
+### Extend IO for I2C, `NM-CYD-C5: CN1`:  
+| 1 | 2| 3| 4|
+|---|---|---|---|
+|3.3V | IO9 | IO8 | GND
 
-`NM-CYD-C5: P1`: IO4 | IO8 | IO26 | GND
+### Extend IO，`NM-CYD-C5: P1`:
+| 1 | 2| 3|4|
+|---|---|---|---| 
+| IO4 | IO8 | IO26 | GND |
 
-`NM-CYD-C5: FPC2`: 12Pin Extend IO
-IO2 | IO6 |  IO7 | IO10 | GND | IO4 | IO8 | IO5 | IO9 | USB D- | USB D+ | GND
+### NM Extend IO: 12Pin FPC interface, `NM-CYD-C5: FPC2`
+| 1 |2|3|4|5|6|7|8|9|10|11|12|
+|---|---|---|---|---|---|---|---|---|---|---|---|
+|IO2 | IO6 |  IO7 | IO10 | GND | IO4 | IO8 | IO5 | IO9 | USB D- | USB D+ | GND |
+
+![NM-CYD-C5-Pinout](Documention/pics/NM-CYD-C5-pinout-800.jpg)
+
+![NM-CYD-C5 detail](Documention/pics/nm-cyd-c5-detail.jpg)
+
+## Compare with ESP32-2432S028
+
+| FEATURE | STANDARD CYD (ESP32) | NM-CYD-C5|
+| :---: | :---: | :---: |
+| **Wi-Fi Band** | 2.4GHz | 2.4+5GHz|
+| **Wi-Fi Standard**| 802.11 b/g/n | 802.11ax (Wi-Fi 6) |
+| **ZigBee** | None | ZigBee 3.0 |
+| **Thread** | None | Thread 1.3|
+| **Flash** | 4MB | 16MB |
+| **PSRAM** | None | 8MB |
+
+![](Documention/pics/compare_cyd-2.jpg)
+![](Documention/pics/compare-cyd-c5.jpg)
 
 # Supported Projects.
 
