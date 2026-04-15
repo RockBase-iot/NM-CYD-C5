@@ -102,6 +102,13 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
 
  - [NMMiner](https://github.com/NMminer1024/NMMiner)
  - [Brucefw](https://github.com/BruceDevices/firmware)
+ - [ESP32Marauder](https://github.com/RockBase-iot/ESP32Marauder)
+ - [Rogue-Radar](https://github.com/RockBase-iot/Rogue-Radar-CYD)
+
+   Rogue Radar is a handheld ESP32 firmware that combines multiple wireless and utility tools into one rotary-driven interface.
+ - [Launcher](https://github.com/RockBase-iot/Launcher)
+
+   Application Launcher for M5Stack, Lilygo, CYDs, Marauder and ESP32 devices. 
 
 If you just want flash the firmware only, you can try [NMMiner Web Flasher](https://flash.nmminer.com), or [NMIoT Web Flasher](https://flash.nmiot.net), choose device type nm-cyd-c5.
 
