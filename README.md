@@ -45,7 +45,7 @@ You can get the NM-CYD-C5 from the RockBase IoT AliExpress store, the RockBase I
 
 # Getting Started with Your NM-CYD-C5
 
-For details on how to get started with your NM-CYD-C5, please check out the [Setup and Configuration](https://wiki.rockbaseiot.com/en/docs/products/nm-cyd-c5/) page.
+For details on how to get started with your NM-CYD-C5, please check out the [Setup and Configuration](https://wiki.rockbaseiot.com/docs/products/nm-cyd-c5/) page.
 
 To work with NM-CYD-C5, you should use the newest espressif32 library, version 3.3.5 or higher.
 
@@ -125,6 +125,14 @@ In response to widespread user demand, the latest batch of NM-CYD-C5-Colorful in
 - Radiation Properties: Omni-directional
 - Polarization: Linear
 
+<table>
+  <tr>
+    <td><img src="Documention/pics/c5_ant.png" width="250"></td>
+    <td><img src="Documention/pics/c5_ant_bruce.jpg" width="250"></td>
+    <td><img src="Documention/pics/c5_ant_marauder.jpg" width="250"></td>
+  </tr>
+</table>
+
 ## Compare with ESP32-2432S028
 
 | Feature | Standard CYD (ESP32) | NM-CYD-C5 |
@@ -178,3 +186,12 @@ For firmware you would like to offer as a download on our Web Flasher, please ch
 - [HaleHound-CYD](https://github.com/JesseCHale/HaleHound-CYD)
 - [ESP32-KillerBee](https://github.com/RockBase-iot/ESP32-KillerBee)
 - [ESP32DualBandWardriver](https://github.com/justcallmekoko/ESP32DualBandWardriver)
+
+# Release Log
+
+## 2026-08-31
+
+- Added the external-antenna version (`NM-CYD-C5-Colorful-Ant`) description and antenna parameters.
+- Added external-antenna enclosure 3MF files:
+  - [nm-cyd-c5-ant-upper.3mf](Documention/3-case/nm-cyd-c5-ant-upper.3mf)
+  - [nm-cyd-c5-ant-bottom.3mf](Documention/3-case/nm-cyd-c5-ant-bottom.3mf)

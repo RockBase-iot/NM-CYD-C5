@@ -125,6 +125,14 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 - 辐射方向：全向
 - 极化方式：线极化
 
+<table>
+  <tr>
+    <td><img src="Documention/pics/c5_ant.png" width="250"></td>
+    <td><img src="Documention/pics/c5_ant_bruce.jpg" width="250"></td>
+    <td><img src="Documention/pics/c5_ant_marauder.jpg" width="250"></td>
+  </tr>
+</table>
+
 ## 与 ESP32-2432S028 对比
 
 | 特性 | 标准 CYD（ESP32）| NM-CYD-C5 |
@@ -178,3 +186,12 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 - [HaleHound-CYD](https://github.com/JesseCHale/HaleHound-CYD)
 - [ESP32-KillerBee](https://github.com/RockBase-iot/ESP32-KillerBee)
 - [ESP32DualBandWardriver](https://github.com/justcallmekoko/ESP32DualBandWardriver)
+
+# 更新日志
+
+## 2026-08-31
+
+- 新增外置天线版本（`NM-CYD-C5-Colorful-Ant`）说明及天线参数。
+- 新增外置天线外壳 3MF 文件：
+  - [nm-cyd-c5-ant-upper.3mf](Documention/3-case/nm-cyd-c5-ant-upper.3mf)
+  - [nm-cyd-c5-ant-bottom.3mf](Documention/3-case/nm-cyd-c5-ant-bottom.3mf)
